@@ -48,7 +48,7 @@ const Navbar = () => {
             fontWeight="bold" 
             fontSize="clamp(1rem, 2rem, 2.25rem"
             color="primary"
-            onclick={()=> navigate("/home")}
+            onClick={()=> navigate("/home")}
             sx={{
                 "&:hover": {
                     color: primaryLight,
@@ -72,7 +72,7 @@ const Navbar = () => {
         
         {isNonMobileScreens ? (
             <FlexBetween gap="2rem">
-                <IconButton onclick = { () => dispatch(setMode())}>
+                <IconButton onClick = { () => dispatch(setMode())}>
                     {theme.palette.mode === "dark" ? (
                         <DarkMode sx={{ fontSize: "25px" }} />
                     ) : (
@@ -140,7 +140,7 @@ const Navbar = () => {
                 </Box>
                 {/* Menu Items */}
                     <FlexBetween display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap="3rem">
-                    <IconButton onclick = { () => dispatch(setMode())} sx={{ color: dark, fontSize: "25px" }}>
+                    <IconButton onClick = { () => dispatch(setMode())} sx={{ color: dark, fontSize: "25px" }}>
                         {theme.palette.mode === "dark" ? (
                             <DarkMode sx={{ fontSize: "25px" }} />
                         ) : (

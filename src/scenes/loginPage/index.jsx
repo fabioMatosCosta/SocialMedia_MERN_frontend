@@ -13,7 +13,7 @@ const LoginPage = () => {
     return (
         <Box>
             <Box width="100%" 
-            backgroudnColor={theme.palette.background.alt} 
+            backgroundColor={theme.palette.background.alt} 
             p="1rem 6%" 
             textAlign="center"
             >
@@ -31,7 +31,7 @@ const LoginPage = () => {
                 p="2rem"
                 m="2rem auto"
                 borderRadius="1.5rem"
-                backgroudnColor={theme.palette.background.alt}
+                backgroundColor={theme.palette.background.alt}
             >
                 <Typography 
                     fontWeight="500" 
