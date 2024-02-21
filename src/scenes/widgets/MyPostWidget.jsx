@@ -167,8 +167,8 @@ const MyPostWidget = ({ picturePath }) => {
                 POST
                 </Button>
             </FlexBetween>
-            </WidgetWrapper>
-        );
-    };
+        </WidgetWrapper>
+    );
+};
     
-    export default MyPostWidget;
+export default MyPostWidget;
