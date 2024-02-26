@@ -1,4 +1,3 @@
-import { FreeBreakfast } from "@mui/icons-material";
 import { Box, Typography, useTheme } from "@mui/material";
 import Friend from "components/Friend";
 import WidgetWrapper from "components/WidgetWrapper";
@@ -11,7 +10,6 @@ const FriendListWidget = ({ userId }) => {
     const { palette } = useTheme();
     const token = useSelector((state) => state.token);
     const friends = useSelector((state) => state.user.friends);
-    const userId = useSelector((state) => state.user._id);
 
     const getFriends = async () => {
         const response = await fetch(
